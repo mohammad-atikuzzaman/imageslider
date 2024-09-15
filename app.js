@@ -3,16 +3,16 @@ const btnPrev = document.getElementById("btnPrev");
 const btnNext = document.getElementById("btnNext");
 
 let num = 0;
-
 function handleImage(val) {
-  num = num + val
-
+  num = num + val;
   console.log(num)
+
+  cards[num].style.display = "block";
 }
 
-btnNext.addEventListener("click", ()=>{
-  handleImage(1)
-})
-btnPrev.addEventListener("click", ()=>{
-  handleImage(-1)
-})
+btnNext.addEventListener("click", () => {
+  handleImage(1);
+});
+btnPrev.addEventListener("click", () => {
+  handleImage(-1);
+});
